@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .card-group {
@@ -30,10 +31,10 @@ body {
 .card-text {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 15px;
-  line-height: 2;
+  line-height: 1.6;
   padding: 30px;
   padding-left: 0;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .sedan-color {
@@ -67,6 +68,11 @@ body {
   font-size: 15px;
   padding: 10px;
   font-weight: bold;
+}
+
+.round-btn:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
 }
 
 .attribution {
