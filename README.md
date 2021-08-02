@@ -7,3 +7,5 @@ Check the solution here: https://asifm37.github.io/FrontEndMentor/<kbd>challeges
 * Challenge #1: [stats-preview-card](https://asifm37.github.io/FrontEndMentor/stats-preview-card/)
 
 * Challenge #2: [3-column-preview-card](https://asifm37.github.io/FrontEndMentor/3-column-preview-card/)
+
+* Challenge #3: [profile-card](https://asifm37.github.io/FrontEndMentor/profile-card/)
