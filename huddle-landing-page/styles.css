@@ -1,0 +1,159 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./images/bg-desktop.svg') -25% 0 / 95% no-repeat var(--violet);
+  color: white;
+  padding: 5rem;
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.design-wrapper {
+  width: 55%;
+}
+
+.illustration {
+  width: 100%;
+  display: block;
+}
+
+.intro-wrapper {
+  padding: 4rem;
+  padding-right: 0;
+  width: 45%;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.intro-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #F9F9F9;
+  padding: 1.5rem 0;
+  padding-right: 1rem;
+}
+
+.btn-register {
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  padding: 1rem;
+  width: 37%;
+  background: white;
+  border-radius: 40px;
+  color: var(--violet);
+  box-shadow: 0 10px 10px rgb(0 0 0 / 0.3);
+}
+
+.btn-register:hover {
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+.social-share {
+  text-align: right;
+  padding: 2rem 1rem;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+}
+
+span.social-icon:hover {
+  color: var(--soft-magenta);
+  border-color: var(--soft-magenta);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  body {
+    background: url('./images/bg-mobile.svg') 0 0 / 100% no-repeat var(--violet);
+    padding: 2.2rem;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .design-wrapper {
+    width: 100%;
+    padding: 3.5rem 0;
+  }
+
+  .intro-wrapper {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    padding: 1.2rem 5px;
+  }
+
+  .btn-register {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    width: 70%;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.3);
+    margin: 1rem;
+  }
+
+  .social-share {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    padding: 6px;
+  }
+}
