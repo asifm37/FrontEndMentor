@@ -10,9 +10,9 @@
 }
 
 body {
-  background: url('./images/bg-desktop.svg') -25% 0 / 95% no-repeat var(--violet);
+  background: url('./images/bg-desktop.svg') -2vw -3.5vh / 95% no-repeat var(--violet);
   color: white;
-  padding: 5rem;
+  padding: 3% 5%;
   position: relative;
   max-width: 100vw;
   max-height: 100vh;
@@ -23,11 +23,11 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   position: relative;
-  padding-top: 5rem;
+  padding-top: 4%;
 }
 
 .design-wrapper {
-  width: 55%;
+  width: 55vw;
 }
 
 .illustration {
@@ -36,37 +36,38 @@ main {
 }
 
 .intro-wrapper {
-  padding: 4rem;
+  padding: 4%;
   padding-right: 0;
-  width: 45%;
+  width: 45vw;
 }
 
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.8vw;
 }
 
 .intro-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.23vw;
   line-height: 1.6;
   color: #F9F9F9;
-  padding: 1.5rem 0;
-  padding-right: 1rem;
+  padding: 3% 0;
+  padding-right: 2vw;
 }
 
 .btn-register {
   outline: none;
   border: none;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem;
-  padding: 1rem;
-  width: 37%;
+  font-size: 1.3vw;
+  padding: 10px;
+  width: 35%;
   background: white;
   border-radius: 40px;
   color: var(--violet);
+  margin: 2% 0;
   box-shadow: 0 10px 10px rgb(0 0 0 / 0.3);
 }
 
@@ -77,17 +78,17 @@ h1 {
 
 .social-share {
   text-align: right;
-  padding: 2rem 1rem;
+  padding: 2.5% 0;
 }
 
 .social-icon {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 5px;
   border: 1px solid white;
   border-radius: 50%;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
