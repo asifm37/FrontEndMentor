@@ -13,3 +13,5 @@ Check the solution here: https://asifm37.github.io/FrontEndMentor/<kbd>challeges
 * Challenge #4: [FAQ accordion card](https://asifm37.github.io/FrontEndMentor/faq-card/)
 
 * Challenge #5: [huddle-landing-page](https://asifm37.github.io/FrontEndMentor/huddle-landing-page/)
+
+* Challenge #6: [ping-coming-soon-page](./ping-coming-soon-page/)

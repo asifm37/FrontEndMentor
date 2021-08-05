@@ -1,0 +1,184 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --dark-blue: hsl(209, 33%, 12%);
+  --font-size: 1.3vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: var(--font-size);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+main {
+  position: relative;
+  max-width: 50%;
+  padding-top: 2%;
+}
+
+.logo-img {
+  padding: 3%;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3.5vw;
+  color: var(--gray);
+  padding: 2%;
+}
+
+.soon {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.tagline {
+  font-weight: 300;
+  color: var(--dark-blue);
+}
+
+.notify-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 3% 0;
+  margin: 3% 0;
+}
+
+input {
+  border: 1px solid var(--pale-blue);
+  border-radius: 40px;
+  outline: none;
+  padding: 2.5% 3%;
+  width: 60%;
+  margin-right: 1%;
+  font-size: var(--font-size);
+}
+
+::placeholder {
+  color: var(--gray);
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 2.8% 3%;
+  width: 26%;
+  background-color: var(--blue);
+  color: white;
+  margin: 0 0.5%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.3);
+  font-size: var(--font-size);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--pale-blue);
+}
+
+.illustration-img {
+  width: 100%;
+  padding: 4%;
+  margin: 3% 0;
+}
+
+.social-share {
+  color: var(--blue);
+  margin: 4% 0;
+  display: block;
+}
+
+.social-icon {
+  text-align: center;
+  border: 1px solid hsl(0, 0%, 79%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5%;
+  cursor: pointer;
+}
+
+span.social-icon:hover {
+  color: white;
+  background: var(--blue);
+}
+
+.copyright {
+  font-size: 0.8vw;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  padding: 8% 0;
+  color: var(--gray);
+}
+
+@media screen and (max-width: 960px) {
+  :root {
+    --font-size: 1.8vh;
+  }
+
+  body {
+    justify-content: center;
+  }
+
+  main {
+    max-width: 90%;
+  }
+
+  .logo-img {
+    width: 25%;
+    margin-bottom: 8%;
+  }
+
+  h1 {
+    font-size: 3.5vh;
+    padding: 5% 0;
+  }
+
+  .notify-wrapper {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 8%;
+  }
+
+  input {
+    margin: 1% 0;
+    width: 80%;
+    padding: 1.5vh 20px;
+  }
+
+  .btn {
+    margin: 1% 0;
+    width: 80%;
+    padding: 1.5vh;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    margin: 8px;
+  }
+
+  .copyright {
+    font-size: 1.4vh;
+  }
+}
