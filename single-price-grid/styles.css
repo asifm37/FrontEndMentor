@@ -1,0 +1,166 @@
+:root {
+  --cyan: hsl(180, 60%, 44%);
+  --light-cyan: hsl(178, 47%, 52%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --strong-yellow: hsl(71, 83%, 44%);
+  --light-gray: hsl(204, 43%, 93%);
+  --gray-blue: hsl(218, 22%, 67%);
+  --font-size: 16px;
+  --border-radius: 10px;
+  --padding: 3vh 2.8vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 100vw;
+  min-height: 100vh;
+  color: white;
+  font-size: var(--font-size);
+  font-family: 'Karla', sans-serif;
+  background-color: var(--light-gray);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 22vw);
+  place-content: center;
+  filter: drop-shadow(0 0 0.75rem rgb(0 0 0 / 0.3));
+}
+
+main>div {
+  padding: var(--padding);
+}
+
+/* Title Section */
+.title {
+  grid-column: 1 / 3;
+  background-color: white;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding-right: 7vw;
+}
+
+.title h1 {
+  color: var(--cyan);
+}
+
+.title h2 {
+  color: var(--bright-yellow);
+}
+
+.title p {
+  color: var(--gray-blue);
+  line-height: 1.5;
+  font-weight: 400;
+  /* font-size: var(--font-size); */
+}
+
+/* Sign Up Section */
+.sign-up {
+  background-color: var(--cyan);
+  border-radius: 0 0 0 var(--border-radius);
+}
+
+.sign-up h3 {
+  font-size: 1.3em;
+}
+
+.sign-up p {
+  font-size: 1.05rem;
+  margin-top: 5px;
+}
+
+.price-wrap {
+  font-weight: 700;
+}
+
+.price {
+  font-size: 2.5em;
+  vertical-align: middle;
+  color: white;
+}
+
+.price-text {
+  color: var(--light-gray);
+  padding-left: 10px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 18px;
+  background-color: var(--bright-yellow);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 0.3);
+  margin: 5% 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--strong-yellow);
+}
+
+.btn:active {
+  background-color: var(--bright-yellow);
+  color: var(--cyan);
+}
+
+/* Why Us Section */
+.why-us {
+  background-color: var(--light-cyan);
+  border-radius: 0 0 var(--border-radius) 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: var(--light-gray);
+}
+
+ul>li {
+  padding: 2px 0;
+}
+
+/* Media Queries for Smaller Devices */
+@media screen and (max-width: 960px) {
+  main>div {
+    padding: 5vw 6vw;
+    font-size: 0.9rem;
+  }
+
+  .title {
+    grid-column: auto;
+    padding-right: 6vw;
+  }
+
+  .title h1 {
+    font-size: 6vw;
+  }
+
+  .title h2 {
+    font-size: 4vw;
+  }
+
+  .title p {
+    line-height: 2;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: 20% 8%;
+  }
+
+  .why-us {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+
+  .sign-up {
+    border-radius: 0;
+  }
+}

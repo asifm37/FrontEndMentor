@@ -15,3 +15,5 @@ Check the solution here: https://asifm37.github.io/FrontEndMentor/<kbd>challeges
 * Challenge #5: [huddle-landing-page](https://asifm37.github.io/FrontEndMentor/huddle-landing-page/)
 
 * Challenge #6: [ping-coming-soon-page](https://asifm37.github.io/FrontEndMentor/ping-coming-soon-page/)
+
+* Challenge #7: [single-price-grid](https://asifm37.github.io/FrontEndMentor/single-price-grid/)
