@@ -1,0 +1,147 @@
+:root {
+  --m-violet: hsl(263, 55%, 52%);
+  --dark-gray-blue: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --blue-gray: hsl(210, 46%, 95%);
+  --light-gray: hsl(0, 0%, 81%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blue-gray);
+}
+
+.testimonial-grid {
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1.5rem;
+  margin: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.t1 {
+  margin-top: 5rem;
+  background: url('./images/bg-pattern-quotation.svg') top right 1.6rem / 33% no-repeat hsl(263, 55%, 52%);
+}
+
+.testimonial-grid:last-child {
+  margin-bottom: 5rem;
+}
+
+.card {
+  --bg-color: var(--m-violet);
+  --head-color: white;
+  --tag-color: var(--light-gray);
+  background-color: var(--bg-color);
+  color: var(--head-color);
+  padding: 2.5rem;
+  padding-bottom: 3rem;
+  border-radius: 10px;
+}
+
+.card .tag {
+  color: var(--light-gray);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.dp {
+  border-radius: 50%;
+  border: 3px solid hsl(263, 55%, 65%);
+  display: block;
+  width: 3rem;
+  margin-right: 10px;
+}
+
+.name {
+  padding: 3px 0;
+}
+
+.tag {
+  font-size: 0.85rem;
+  font-weight: lighter;
+}
+
+.content {
+  line-height: 1.4;
+}
+
+.content h1 {
+  padding: 1rem 0;
+  font-size: 1.62rem;
+  font-weight: 500;
+}
+
+.content p {
+  color: var(--tag-color);
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.t2 {
+  background-color: var(--dark-gray-blue);
+}
+
+.t3 {
+  background-color: white;
+  color: var(--dark-blue);
+  --tag-color: var(--dark-gray-blue);
+}
+
+.t4 {
+  background-color: var(--dark-blue);
+}
+
+.t5 {
+  background-color: white;
+  color: var(--dark-blue);
+  --tag-color: var(--dark-gray-blue);
+}
+
+/* Media Query for Larger Device */
+@media screen and (min-width: 960px) {
+  main {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-content: center;
+    justify-content: center;
+    grid-gap: 2vw;
+    max-width: 80vw;
+    margin: auto;
+  }
+
+  .t1 {
+    margin: 0;
+    background-size: 9rem;
+    background-position: top right 8rem;
+    grid-column: 1 / 3;
+  }
+
+  .t4 {
+    grid-column: 2 / 4;
+  }
+
+  .t5 {
+    grid-column: 4 / 5;
+    grid-row: 1/ 3;
+  }
+
+  .testimonial-grid:last-child {
+    margin-bottom: 0;
+  }
+}
