@@ -101,15 +101,21 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: white;
   background-color: var(--dark-gray);
   padding: 1.3rem;
   border-radius: 15px;
-  width: 50%;
   position: absolute;
   bottom: 31%;
   right: -12.5%;
   z-index: 2;
   opacity: 0;
+}
+
+.tooltip .fab,
+.tooltip p {
+  display: inline-block;
+  padding: 0 14px;
 }
 
 .tool-active {
@@ -123,7 +129,7 @@ p {
   border: 1rem solid transparent;
   border-top-color: var(--dark-gray);
   z-index: 30;
-  bottom: -48%;
+  bottom: -47%;
   left: calc(50% - 0.8rem);
 }
 
@@ -183,5 +189,14 @@ p {
     bottom: 0;
     left: 0;
     z-index: 1;
+  }
+
+  .tooltip p {
+    padding: 0;
+    padding-right: 10px;
+  }
+
+  .tooltip .fab {
+    font-size: 1.5rem;
   }
 }
