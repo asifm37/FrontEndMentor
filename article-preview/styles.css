@@ -83,6 +83,10 @@ p {
   width: 80%;
 }
 
+.profile>h2 {
+  font-size: 1rem;
+}
+
 .share {
   background-color: var(--light-gray-blue);
   padding: 10px;
@@ -173,7 +177,7 @@ p {
     padding: 1rem 0;
   }
 
-  .avatar h3 {
+  .avatar h2 {
     font-size: 0.8rem;
   }
 
