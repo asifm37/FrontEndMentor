@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS Style -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main>
+    <section class="landing">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </section>
+    <section class="signup">
+      <div>
+        <button class="trial-btn"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+      </div>
+      <div class="form-div">
+        <form id="signup-form" action="" novalidate>
+          <div class="form-control">
+            <input class='fname' type="text" placeholder="First Name">
+            <img class='error' src="./images/icon-error.svg" alt="error">
+            <small>First Name cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input class='lname' type="text" placeholder="Last Name">
+            <img class='error' src="./images/icon-error.svg" alt="error">
+            <small>Last Name cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input class='email' type="email" placeholder="Email Address">
+            <img class='error' src="./images/icon-error.svg" alt="error">
+            <small>Email cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input class='password' type="password" placeholder="Password">
+            <img class='error' src="./images/icon-error.svg" alt="error">
+            <small>Password cannot be empty</small>
+          </div>
+          <button class='claim-button' type="submit" name="claim">Claim your free trial</button>
+          <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
