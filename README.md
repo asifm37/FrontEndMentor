@@ -24,4 +24,4 @@ Check the solution here: https://asifm37.github.io/FrontEndMentor/<kbd>challeges
 
 * Challenge #10: [intro-signup-form](https://asifm37.github.io/FrontEndMentor/intro-signup-form/)
 
-* Challenge #11: [intro-signup-form](https://asifm37.github.io/FrontEndMentor/time-track-dashboard/)
+* Challenge #11: [time-track-dashboard](https://asifm37.github.io/FrontEndMentor/time-track-dashboard/)
