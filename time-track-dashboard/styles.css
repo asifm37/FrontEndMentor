@@ -1,0 +1,228 @@
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --orange: hsl(15, 100%, 70%);
+  --soft-blue: hsl(195, 74%, 62%);
+  --red: hsl(348, 100%, 68%);
+  --lime: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --yellow: hsl(43, 84%, 65%);
+  --dark-blue: hsl(226, 43%, 10%);
+  --dark-blue2: hsl(235, 46%, 20%);
+  --desat-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+  --desat-white: #f5f6ff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  color: var(--desat-white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-blue);
+}
+
+.main-container {
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1.3rem;
+  margin: 4rem 1.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  border-radius: 15px;
+  background-color: var(--dark-blue2);
+  min-height: 150px;
+}
+
+.profile {
+  background-color: var(--blue);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.6rem;
+}
+
+.dp {
+  border-radius: 50%;
+  border: 3px solid white;
+  display: block;
+  width: 75px;
+  margin-right: 10px;
+}
+
+.heading {
+  color: var(--pale-blue);
+  font-size: 0.8rem;
+}
+
+.heading h1 {
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: var(--desat-white);
+  margin-top: 5px;
+}
+
+.timeframe {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--desat-blue);
+  margin: 25px 0;
+}
+
+.timeframe div:hover {
+  color: var(--desat-white);
+  cursor: pointer;
+}
+
+.timeframe .selected {
+  color: var(--desat-white);
+}
+
+.data {
+  margin-top: 10%;
+  border-radius: 15px;
+  background-color: var(--dark-blue2);
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.data:hover {
+  background-color: var(--desat-blue);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.title img {
+  cursor: pointer;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.cur-time {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.prev-time {
+  font-size: 0.8rem;
+  color: var(--pale-blue);
+}
+
+.card.work {
+  background: url('./images/icon-work.svg') top -13px right 15px / 25% no-repeat
+    var(--orange);
+}
+
+.card.play {
+  background: url('./images/icon-play.svg') top -13px right 15px / 25% no-repeat
+    var(--soft-blue);
+}
+
+.card.study {
+  background: url('./images/icon-study.svg') top -13px right 15px / 25% no-repeat
+    var(--red);
+}
+
+.card.exercise {
+  background: url('./images/icon-exercise.svg') top -2px right 15px / 25% no-repeat
+    var(--lime);
+}
+
+.card.social {
+  background: url('./images/icon-social.svg') top -13px right 15px / 20% no-repeat
+    var(--violet);
+}
+
+.card.self-care {
+  background: url('./images/icon-self-care.svg') top -13px right 15px / 20% no-repeat
+    var(--yellow);
+}
+
+@media screen and (min-width: 570px) {
+  .main-container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-container {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    /* grid-auto-rows: 240px; */
+    place-content: center;
+    margin: 0 auto;
+    padding: 0 10vw;
+  }
+
+  .prof-card {
+    grid-row: 1 / span 2;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .dp {
+    margin-bottom: 10px;
+  }
+  .heading {
+    margin: 1rem 0;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .timeframe {
+    height: 35%;
+    padding: 1.6rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .data {
+    margin-top: 15%;
+  }
+
+  .time {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .cur-time {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .prev-time {
+    margin-bottom: 1rem;
+  }
+}
