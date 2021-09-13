@@ -3,13 +3,6 @@ const timeframes = document.querySelectorAll('.timeframe > div');
 const profileCard = mainContainer.innerHTML;
 let profileData = null;
 
-document.querySelectorAll('.timeframe > div').forEach((item, i) => {
-  item.addEventListener('click', () => {
-    console.log(item.id);
-    updateThings(item.id);
-  });
-});
-
 fetch('./data.json')
   .then((response) => response.json())
   .then((stats) => {
@@ -17,20 +10,35 @@ fetch('./data.json')
     updateThings();
   });
 
+function addEvents() {
+  document.querySelectorAll('.timeframe > div').forEach((item, i) => {
+    item.addEventListener('click', () => {
+      console.log("Clicked: " + item.id);
+      if (item.id !== document.querySelector('.selected').id)
+        updateThings(item.id);
+    });
+  });
+}
+
 function updateThings(frame = 'weekly') {
+  console.log("Rendering the Data for " + frame);
+  // Update the Content
+  mainContainer.innerHTML = profileCard;
+  profileData.forEach(
+    (item, i) =>
+    (mainContainer.innerHTML += generateCard(
+      item.title,
+      item.timeframes[frame].current,
+      item.timeframes[frame].previous
+    ))
+  );
+  // Update the Selection
   document.querySelectorAll('.timeframe > div').forEach((item, i) => {
     item.classList.remove('selected');
   });
   document.querySelector('#' + frame).classList.add('selected');
-  mainContainer.innerHTML = profileCard;
-  profileData.forEach(
-    (item, i) =>
-      (mainContainer.innerHTML += generateCard(
-        item.title,
-        item.timeframes[frame].current,
-        item.timeframes[frame].previous
-      ))
-  );
+  // Add Event Listener
+  addEvents();
 }
 
 function generateCard(title, curTime, prevTime) {
