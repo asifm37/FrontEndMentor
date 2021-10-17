@@ -16,18 +16,23 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100vw;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
-    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
 .text-container {
   display: flex;
   flex-direction: column;
-  width: 55%;
-  padding: 10vh 16vw 10vh 12vw;
+  width: 60%;
+  padding: 20vh 16vw 15vh 12vw;
   background: url('./images/bg-pattern-desktop.svg') bottom left / cover
     no-repeat;
 }
@@ -45,10 +50,14 @@ body {
 
 .content h1 {
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: 1rem;
   line-height: 1;
   color: var(--gray-red);
+}
+
+.content h1 > span {
+  display: block;
 }
 
 .content h1 .we-are {
@@ -73,7 +82,7 @@ body {
 .email input {
   border: solid 1px var(--des-red);
   outline: none;
-  padding: 20px 30% 20px 30px;
+  padding: 1rem 30% 1rem 30px;
   background: transparent;
   width: 100%;
   border-radius: 50px;
@@ -122,13 +131,13 @@ small {
 }
 
 .image-container {
-  min-width: 45%;
+  min-width: 40%;
   background: url('./images/hero-desktop.jpg') top left / cover no-repeat
     var(--soft-red);
 }
 
 @media screen and (max-width: 1000px) {
-  body {
+  main {
     flex-direction: column-reverse;
     text-align: center;
   }
