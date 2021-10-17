@@ -31,8 +31,8 @@ main {
 .text-container {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding: 20vh 16vw 15vh 12vw;
+  width: 55%;
+  padding: 15vh 11vw;
   background: url('./images/bg-pattern-desktop.svg') bottom left / cover
     no-repeat;
 }
@@ -41,7 +41,7 @@ main {
   width: 10%;
   position: absolute;
   top: 10vh;
-  left: 12vw;
+  left: 11vw;
 }
 
 .content {
@@ -131,7 +131,7 @@ small {
 }
 
 .image-container {
-  min-width: 40%;
+  min-width: 45%;
   background: url('./images/hero-desktop.jpg') top left / cover no-repeat
     var(--soft-red);
 }
